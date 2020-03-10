@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ModMetaData>
-	<name>[1.0] Modlist</name>
-	<url>https://github.com/apkd/Modlist/</url>
-	<author>apkd</author>
-	<targetVersion>1.0.2059</targetVersion>
-	<description>Exports the list of enabled mods (and the download links) to modlist.txt (modlist.html) in the RimWorld directory. Can be transparently added or removed without making anything explode. 
+  <name>Modlist</name>
+  <author>apkd</author>
+  <packageId>pyrce.modlist</packageId>
+  <url>https://github.com/MSeal/Modlist</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <description>Exports the list of enabled mods (and the download links) to modlist.txt (modlist.html) in the RimWorld directory. Can be transparently added or removed without making anything explode. 
 
 Now also generates mod lists in HTML format.
 
