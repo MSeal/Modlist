@@ -64,10 +64,10 @@ namespace ModlistMod
 			{
 				string desc = System.Text.RegularExpressions.Regex.Replace(mod.Description, @"\n\s*", "\n");
 
-				text.AppendLine($"##### [{mod.Name}]({GetModUri(mod)}) by {mod.Author}");
+				text.AppendLine($"##### [{mod.Name}]({GetModUri(mod)}) by {mod.AuthorsString}");
 
 				if (!mod.VersionCompatible)
-					text.AppendLine($"*Mod intended for version {mod.TargetVersion}*\n");
+					text.AppendLine($"*Mod intended for versions [{String.Join(", ", mod.SupportedVersionsReadOnly)}]*\n");
 
 				text.AppendLine($"{desc}");
 				text.AppendLine();
